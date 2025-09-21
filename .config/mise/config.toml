@@ -1,4 +1,6 @@
 [tools]
+lazydocker = "latest"
 node = "lts"
 shfmt = "latest"
 stylua = "latest"
+yarn = "latest"

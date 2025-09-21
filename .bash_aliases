@@ -7,19 +7,13 @@ alias ws='cd /mnt/d/Documents/Workspace'
 alias ms='cd /mnt/d/Music'
 alias sc='cd /mnt/d/Documents/School/code-ptit-solutions/C++'
 alias compe='cd /mnt/d/Documents/Workspace/cp'
-
 alias nc='cd ~/.config/nvim/; nvim .'
 
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 alias glog='git log --graph --oneline --decorate'
 alias lzd=lazydocker
 
-# Youtube video download
-alias ytdl='yt-dlp -o "%(title)s.%(ext)s" -f mp4'
-
-# Youtube music download
-alias ytmsdl='yt-dlp -o "%(title)s.%(ext)s" -x --audio-format mp3'
-
-# Soundcloud download
-alias scdl='yt-dlp -o "%(title)s.%(ext)s" -f mp3'
-
+# yt-dlp
+alias ytdl='yt-dlp -o "%(title)s.%(ext)s" -f mp4'                  # Youtube video download
+alias ytmsdl='yt-dlp -o "%(title)s.%(ext)s" -x --audio-format mp3' # Youtube music download
+alias scdl='yt-dlp -o "%(title)s.%(ext)s" -f mp3'                  # Soundcloud download
