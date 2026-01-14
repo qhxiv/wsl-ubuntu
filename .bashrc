@@ -116,7 +116,7 @@ if ! shopt -oq posix; then
 fi
 
 shopt -s autocd # Allow you to cd into directory merely by typing the directory name.
-set -o vi       # vi mode
+# set -o vi       # vi mode
 
 . ~/.local/bin/git/git-completion.bash
 . ~/.local/bin/git/git-prompt.sh
@@ -125,4 +125,4 @@ export GIT_PS1_SHOWSTASHSTATE=1
 PROMPT_COMMAND='PS1_CMD1=$(__git_ps1 " (%s)")'
 PS1='\[\e[96;1m\]\w\[\e[93m\]${PS1_CMD1}\[\e[0m\] '
 
-eval "$(/home/qh/.local/bin/mise activate bash)"
+eval "$(mise activate bash)"
