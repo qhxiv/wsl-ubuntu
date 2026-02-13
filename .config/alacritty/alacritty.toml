@@ -1,3 +1,6 @@
+[general]
+import = ["vague.toml"]
+
 [window]
 padding = { x = 4, y = 4 }
 startup_mode = "Maximized"
@@ -6,11 +9,11 @@ startup_mode = "Maximized"
 normal = { family  = "AdwaitaMono Nerd Font" }
 size = 10.5
 
-[colors.normal]
-blue = '#54546D'
+# [colors.normal]
+# blue = '#54546D'
 
 [cursor]
 thickness = 0.2
 
 [terminal]
-shell = { program = "ubuntu.exe" }
+shell = { program = "wsl", args = ["-d", "ubuntu", "--cd", "~"] }

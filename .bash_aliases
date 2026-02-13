@@ -1,4 +1,4 @@
-WINDOWS_USERNAME=qh
+WINDOWS_USERNAME=user
 OBSIDIAN_VAULT_DIR=/mnt/d/Documents/obsidian
 
 alias ls='ls -hNA --color=auto --group-directories-first'
@@ -11,6 +11,7 @@ alias ms='cd /mnt/d/Music'
 alias sc='cd /mnt/d/Documents/School/code-ptit-solutions/C++'
 alias compe='cd /mnt/d/Documents/Workspace/cp'
 alias desktop="cd /mnt/c/Users/${WINDOWS_USERNAME}/Desktop"
+alias whome="cd /mnt/c/Users/${WINDOWS_USERNAME}"
 alias obsi="cd ${OBSIDIAN_VAULT_DIR}"
 
 alias nc='cd ~/.config/nvim/; nvim .'
