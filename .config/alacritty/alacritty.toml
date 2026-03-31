@@ -1,16 +1,13 @@
-[general]
-import = ["vague.toml"]
-
 [window]
 padding = { x = 4, y = 4 }
 startup_mode = "Maximized"
 
 [font]
-normal = { family  = "AdwaitaMono Nerd Font" }
-size = 10.5
+normal = { family  = "BlexMono Nerd Font" }
+size = 11.5
 
-# [colors.normal]
-# blue = '#54546D'
+[colors.normal]
+blue = '#54546D'
 
 [cursor]
 thickness = 0.2

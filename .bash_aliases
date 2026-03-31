@@ -11,6 +11,7 @@ alias ms='cd /mnt/d/Music'
 alias sc='cd /mnt/d/Documents/School/code-ptit-solutions/C++'
 alias compe='cd /mnt/d/Documents/Workspace/cp'
 alias desktop="cd /mnt/c/Users/${WINDOWS_USERNAME}/Desktop"
+alias doc="cd /mnt/d/Documents"
 alias whome="cd /mnt/c/Users/${WINDOWS_USERNAME}"
 alias obsi="cd ${OBSIDIAN_VAULT_DIR}"
 
