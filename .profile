@@ -24,8 +24,6 @@ fi
 # Add all directories in `~/.local/bin` to $PATH
 export PATH="$PATH:$(find ~/.local/bin -type d | paste -sd ':' -)"
 
-# export MANPAGER="bat -pl man"
-
 nvim() {
   if ! pidof socat >/dev/null 2>&1; then
     [ -e /tmp/discord-ipc-0 ] && rm -f /tmp/discord-ipc-0
