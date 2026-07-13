@@ -123,6 +123,9 @@ shopt -s autocd # Allow you to cd into directory merely by typing the directory 
 export GIT_PS1_SHOWDIRTYSTATE=1
 export GIT_PS1_SHOWSTASHSTATE=1
 PROMPT_COMMAND='PS1_CMD1=$(__git_ps1 " (%s)")'
-PS1='\[\e[96;1m\]\w\[\e[93m\]${PS1_CMD1}\[\e[0m\] '
+# PS1='\[\e[96;1m\]\w\[\e[93m\]${PS1_CMD1}\[\e[0m\] '
+PS1='\[\e[94m\]\H\[\e[97m\]:\[\e[93m\]\w\[\e[92m\]${PS1_CMD1} \[\e[95m\]\\$\[\e[0m\] '
 
 eval "$(mise activate bash)"
+
+source /home/qh/.config/broot/launcher/bash/br

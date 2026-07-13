@@ -23,5 +23,23 @@ alias glog='git log --graph --oneline --decorate'
 alias lzd=lazydocker
 
 # yt-dlp
-alias vdl='yt-dlp -o "%(title)s.%(ext)s" -t mp4' # Video download
-alias mdl='yt-dlp -o "%(title)s.%(ext)s" -t mp3' # Music download
+# video download
+vdl() {
+  if [[ -z "$2" ]]; then
+    yt-dlp -o "%(title)s.%(ext)s" -t mp4 "$1"
+  else
+    yt-dlp -o "$1.%(ext)s" -t mp4 "$2"
+  fi
+}
+
+mdl() {
+  if [[ -z "$2" ]]; then
+    yt-dlp -o "%(title)s.%(ext)s" -t mp3 "$1"
+  else
+    yt-dlp -o "$1.%(ext)s" -t mp3 "$2"
+  fi
+}
+
+# alias mdl='yt-dlp -o "%(title)s.%(ext)s" -t mp3' Music download
+
+# alias nvim="NVIM_APPNAME=nvim.buh nvim"

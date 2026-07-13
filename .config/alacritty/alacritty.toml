@@ -12,22 +12,11 @@ thickness = 0.2
 [terminal]
 shell = { program = "wsl", args = ["-d", "ubuntu", "--cd", "~"] }
 
-# [colors.normal]
-# blue = '#54546D'
+[general]
+import = [ "themes/mellow.toml" ]
 
-# LACKLUSTER COLORS
 [colors.primary]
-background = '#0A0A0A'
+background = '#000000'
 
 [colors.normal]
-# black is gray0
-black = '#080808'
-red = '#D70000'
-green = '#789978'
-yellow = '#ffAA88'
-blue = '#7788AA'
-magenta = '#D7007D'
-# cyan is set to lack
-cyan = '#708090' 
-# white is set to luster
-white = '#DEEEED'
+blue = '#54546D'

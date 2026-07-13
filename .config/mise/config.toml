@@ -1,6 +1,3 @@
 [tools]
-lazydocker = "latest"
-node = "lts"
-python = "latest"
 shfmt = "latest"
 stylua = "latest"

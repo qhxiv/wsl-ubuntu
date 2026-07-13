@@ -17,19 +17,9 @@ if [ -n "$BASH_VERSION" ]; then
 fi
 
 # set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ]; then
-  PATH="$HOME/bin:$PATH"
-fi
+# if [ -d "$HOME/bin" ]; then
+#   PATH="$HOME/bin:$PATH"
+# fi
 
 # Add all directories in `~/.local/bin` to $PATH
 export PATH="$PATH:$(find ~/.local/bin -type d | paste -sd ':' -)"
-
-nvim() {
-  if ! pidof socat >/dev/null 2>&1; then
-    [ -e /tmp/discord-ipc-0 ] && rm -f /tmp/discord-ipc-0
-    socat UNIX-LISTEN:/tmp/discord-ipc-0,fork \
-      EXEC:"npiperelay.exe //./pipe/discord-ipc-0" 2>/dev/null &
-  fi
-
-  command nvim "$@"
-}
